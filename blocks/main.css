@@ -1,11 +1,11 @@
-.main {
+.content {
   margin: 91.06px auto 92px;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.main__title {
+.content__title {
   font-family: "Inter", Arial, sans-serif;
   width: 100%;
   max-width: 720px;
@@ -15,7 +15,7 @@
   line-height: 100px;
   margin: 0 auto;
 }
-.main__text {
+.content__text {
   font-family: "Inter", Arial, sans-serif;
   width: 100%;
   max-width: 720px;
@@ -26,7 +26,7 @@
   letter-spacing: 0%;
   text-align: center;
 }
-.main__image {
+.content__image {
   width: clamp(320px, 100%, 984px);
   aspect-ratio: 984 / 615;
   /* width: 100%; */
@@ -34,37 +34,37 @@
   margin-top: 4rem;
 }
 @media screen and (max-width: 768px) {
-  .main {
+  .content {
     margin: 90px auto 90px;
   }
-  .main__text-group {
+  .content__text-group {
     padding: 0 24px;
   }
 
-  .main__title {
+  .content__title {
     font-size: 75px;
     line-height: 79px;
   }
-  .main__text {
+  .content__text {
     font-size: 30px;
 
     line-height: 36px;
   }
 }
 @media screen and (max-width: 320px) {
-  .main__text-group {
+  .content__text-group {
     padding: 0 16px 40px;
   }
-  .main__title {
+  .content__title {
     font-size: 40px;
     line-height: 44px;
   }
-  .main__text {
+  .content__text {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0;
   }
-  .main__image {
+  .content__image {
     margin: 0;
   }
 }
