@@ -7,20 +7,18 @@
   font-family: "Inter", Arial, sans-serif;
   font-weight: 900;
   font-size: 54px;
-  leading-trim: NONE;
-  line-height: 58px;
+
+  line-height: 1.07;
   letter-spacing: 0%;
   max-width: 984px;
-  font-style: bold;
+
   margin: 0;
 }
 .info__quote {
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
-  leading-trim: NONE;
-  line-height: 34px;
-  letter-spacing: 0%;
+  line-height: 1.42;
   margin: 40px 0 10px;
 }
 .info__quote-author {
@@ -28,18 +26,15 @@
   display: block;
   font-weight: 400;
   font-size: 24px;
-  leading-trim: NONE;
-  line-height: 34px;
-  letter-spacing: 0%;
+  line-height: 1.42;
+
   text-align: right;
 }
 .info__text {
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  leading-trim: NONE;
-  line-height: 163%;
-  letter-spacing: 0%;
+  line-height: 1.63;
   margin: 32px 0 0;
 }
 @media screen and (max-width: 768px) {
@@ -50,39 +45,31 @@
   }
   .info__title {
     font-size: 45px;
-    leading-trim: NONE;
-    line-height: 49px;
-    letter-spacing: 0%;
+
+    line-height: 1.09;
   }
   .info__quote {
     font-size: 24px;
-    leading-trim: NONE;
-    line-height: 34px;
     letter-spacing: 0%;
   }
   .info__quote-author {
     font-size: 24px;
-    leading-trim: NONE;
-    line-height: 34px;
     letter-spacing: 0%;
     text-align: right;
   }
   .info__text {
     font-size: 16px;
-    leading-trim: NONE;
-    line-height: 163%;
     letter-spacing: 0%;
   }
 }
 @media screen and (max-width: 320px) {
   .info__title {
     font-size: 32px;
-
-    line-height: 35px;
+    line-height: 1.09;
   }
   .info__quote {
     font-size: 24px;
 
-    line-height: 30px;
+    line-height: 1.25;
   }
 }
