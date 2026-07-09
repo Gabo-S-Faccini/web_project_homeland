@@ -1,6 +1,6 @@
 .info {
   justify-content: left;
-  margin-bottom: 92px;
+  margin: 0 148px 92px;
   margin-right: calc(302 / 1200 * 100%);
 }
 .info__title {

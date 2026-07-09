@@ -1,0 +1,170 @@
+.places {
+  margin: 0 148px 90px;
+  max-width: 987px;
+  justify-content: center;
+}
+.places__card {
+  font-family: "Inter", Arial, sans-serif;
+  display: grid;
+  column-gap: 40px;
+  row-gap: 48px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  grid-template-areas:
+    "places__header places__author"
+    "places__img places__text"
+    "places__button places__text";
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+.places__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.05;
+  grid-area: places__header;
+  max-height: 152px;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+}
+.places__author {
+  font-family: "Inter", Arial, sans-serif;
+  display: block;
+  font-weight: 400;
+  grid-area: places__author;
+  align-self: flex-end;
+  padding: 0;
+  margin: 0;
+}
+.places__author-heading {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+.places__author-name {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.22;
+  margin: 0;
+}
+
+.places__img {
+  grid-area: places__img;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  max-height: 460px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+}
+.places__text {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.63;
+  grid-area: places__text;
+}
+
+.places__button,
+.places__button:link,
+.places__button:visited,
+.places__button:active {
+  color: white;
+  text-decoration: none;
+}
+.places__button {
+  color: white;
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  grid-area: places__button;
+  max-height: 48px;
+  width: auto;
+  text-align: center;
+  max-width: 290px;
+  text-align: center;
+  align-self: start;
+  padding: 13px 20px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  white-space: nowrap;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.places__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    margin: 0;
+    padding: 0 24px 65px;
+  }
+  .places__title {
+    margin: 0;
+
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .places__img {
+  }
+  .places__text {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+  .places__button {
+  }
+}
+@media screen and (max-width: 320px) {
+  .places {
+    margin: 0;
+    padding: 0;
+  }
+  .places__card {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "places__header"
+      "places__author"
+      "places__img"
+      "places__text"
+      "places__button";
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .places__author {
+    padding: 0 16px;
+  }
+  .places__title {
+    padding: 0 16px;
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .places__text {
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 1.63;
+  }
+  .places__button {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 16px;
+    line-height: 1;
+  }
+}
