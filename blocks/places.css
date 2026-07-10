@@ -10,8 +10,6 @@
   row-gap: 48px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto 1fr;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   grid-template-areas:
     "places__header places__author"
     "places__img places__text"
@@ -119,13 +117,9 @@
     line-height: 1.1;
   }
 
-  .places__img {
-  }
   .places__text {
     font-size: 16px;
     line-height: 1.63;
-  }
-  .places__button {
   }
 }
 @media screen and (max-width: 480px) {
