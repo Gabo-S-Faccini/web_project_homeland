@@ -137,6 +137,7 @@
       "places__button";
     gap: 30px;
     margin-bottom: 50px;
+    min-width: 0;
   }
 
   .places__author {
@@ -153,12 +154,57 @@
     padding: 0 16px;
     font-size: 16px;
     line-height: 1.63;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
   .places__button {
     font-family: Inter;
     font-weight: 600;
     font-size: 14px;
     margin: 0 16px;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 290px) {
+  .places {
+    margin: 0;
+    padding: 0;
+  }
+  .places__card {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "places__header"
+      "places__author"
+      "places__img"
+      "places__text"
+      "places__button";
+    gap: 15px;
+    margin-bottom: 30px;
+    min-width: 0;
+  }
+
+  .places__author {
+    padding: 0 10px;
+  }
+  .places__title {
+    padding: 0 16px;
+    font-size: 25px;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .places__text {
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 1.63;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .places__button {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 5px;
     line-height: 1;
   }
 }
